@@ -15,7 +15,6 @@ import {AiFillGithub} from 'react-icons/ai';
 import {ImFacebook2} from 'react-icons/im';
 import Footer from "./components/Copyright";
 
-
 class App extends React.Component {
     render() {
         return (
