@@ -9,21 +9,20 @@ import LinkedIn from "./social/LinkedIn";
 import Git from "./social/Git";
 import FaceBook from "./social/FaceBook";
 import Certificates from "./components/Certificates";
-import {Nav, Navbar} from "react-bootstrap";
+import {Container, Nav, Navbar} from "react-bootstrap";
 import {SiLinkedin} from "react-icons/si/index";
 import {AiFillGithub} from 'react-icons/ai';
 import {ImFacebook2} from 'react-icons/im';
-import Footer from "./components/Copyright";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
     render() {
         return (
             <BrowserRouter>
-                <div className="container">
-                    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                        <Navbar.Brand href="/">About</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                    <Navbar.Brand href="/">About</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/projects">Projects</Nav.Link>
                             <Nav.Link href="/media">Media</Nav.Link>
@@ -34,8 +33,9 @@ class App extends React.Component {
                             <Nav.Link href="/linkedIn"><SiLinkedin/></Nav.Link>
                             <Nav.Link href="/git"><AiFillGithub/></Nav.Link>
                         </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
+                    </Navbar.Collapse>
+                </Navbar>
+                <Container>
                     <Route exact path="/" component={About}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contacts" component={Contacts}/>
@@ -63,7 +63,7 @@ class App extends React.Component {
                         window.location.href = 'https://www.facebook.com/adler.vitalii';
                         return null;
                     }}/>
-                </div>
+                </Container>
                 <Footer/>
             </BrowserRouter>
         );
