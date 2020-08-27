@@ -2,18 +2,18 @@ import React from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Projects from "./components/Projects";
-import Contacts from "./components/Contacts";
-import About from "./components/About";
+import Projects from "./models/Projects";
+import Contacts from "./models/Contacts";
+import About from "./models/About";
 import LinkedIn from "./social/LinkedIn";
 import Git from "./social/Git";
 import FaceBook from "./social/FaceBook";
-import Certificates from "./components/Certificates";
+import Certificates from "./models/Certificates";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {SiLinkedin} from "react-icons/si/index";
 import {AiFillGithub} from 'react-icons/ai';
 import {ImFacebook2} from 'react-icons/im';
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 
 class App extends React.Component {
     render() {

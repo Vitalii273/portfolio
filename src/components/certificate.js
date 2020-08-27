@@ -1,7 +1,7 @@
 import React from "react"
 import {Card} from "react-bootstrap";
 
-export default function CertModel(props) {
+export default function Certificate(props) {
     return (
         <Card>
             <Card.Header style={{background: "grey"}}>

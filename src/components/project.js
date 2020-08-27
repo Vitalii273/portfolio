@@ -3,7 +3,7 @@ import {Card} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
 
-export default function ProjectModel(props) {
+export default function Project(props) {
 
     return (
         <Card>

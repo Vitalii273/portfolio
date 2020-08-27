@@ -1,6 +1,7 @@
 import React from "react"
-import {Row, Button, Col} from "react-bootstrap";
-import CustomizedSnackbars from "../components/SnackBar";
+import {Row, Col} from "react-bootstrap";
+import CustomizedSnackbars from "../components/snackBar";
+import {FeedBackForm} from "../components/feedBackForm.js"
 
 class FeedbackModel extends React.Component {
 
@@ -18,7 +19,6 @@ class FeedbackModel extends React.Component {
         this.setState({name: '', email: '', message: '', fullForm: false})
     }
 
-
     render() {
         return (
             // this.state.fullForm ?
@@ -33,21 +33,18 @@ class FeedbackModel extends React.Component {
                 </Row>
                 <br/>
                 <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                    <div className="form-group">
-                        <label htmlFor="name">Name</label>
+                    <FeedBackForm htmlFor="name" labelText="Name">
                         <input type="text" className="form-control" value={this.state.name}
                                onChange={this.onNameChange.bind(this)}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="exampleInputEmail1">Email address</label>
+                    </FeedBackForm>
+                    <FeedBackForm htmlFor="exampleInputEmail1" labelText="Email address">
                         <input type="email" className="form-control" aria-describedby="emailHelp"
                                value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message">Message</label>
+                    </FeedBackForm>
+                    <FeedBackForm htmlFor="message" labelText="Message">
                         <textarea className="form-control" rows="5" value={this.state.message}
                                   onChange={this.onMessageChange.bind(this)}/>
-                    </div>
+                    </FeedBackForm>
                     <CustomizedSnackbars/>
                     {/*<Button variant="outline-secondary" type="submit">Submit</Button>*/}
                 </form>

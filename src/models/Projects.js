@@ -1,17 +1,17 @@
 import React from 'react';
 import {CardColumns} from "react-bootstrap";
-import ProjectModel from "../models/project-model";
+import Project from "../components/project";
 
 
 export default function Projects(props) {
     return (
-        // Render a ProjectModel component
+        // Render a Project component
         <>
             <br/>
             <h1>Projects</h1>
             <br/>
             <CardColumns>
-                <ProjectModel
+                <Project
                     image={require('../img/logo.ilcarro.svg')}
                     title="Car Rental Service"
                     text="Project - Car Rental Service:
@@ -21,7 +21,7 @@ export default function Projects(props) {
 " footer="Developed at Optisor LTD"
                     link="/icarro"
                 />
-                <ProjectModel
+                <Project
                     image={require('../img/learn-JavaScript.jpg')}
                     title="Javascriot  self-study project"
                     text="Contains the entire core of javascript with examples, solutions and explanations. Also examples for test questions! Good luck!"
