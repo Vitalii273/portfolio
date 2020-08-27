@@ -1,5 +1,5 @@
-// @flow
 import React from 'react';
+
 
 export const FeedBackForm = ({htmlFor, labelText, children}) => {
     return (

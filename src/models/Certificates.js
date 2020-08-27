@@ -2,6 +2,7 @@ import React from 'react';
 import {CardColumns} from "react-bootstrap";
 import Certificate from "../components/certificate";
 
+
 export default function Certificates(props) {
     return (
         // Render a Project component

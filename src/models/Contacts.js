@@ -3,6 +3,7 @@ import {Row, Col} from "react-bootstrap";
 import CustomizedSnackbars from "../components/snackBar";
 import {FeedBackForm} from "../components/feedBackForm.js"
 
+
 class FeedbackModel extends React.Component {
 
     constructor(props) {

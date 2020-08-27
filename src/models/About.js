@@ -2,6 +2,7 @@ import React from "react"
 import {Heading, Content, Work, Education, Skills} from "resume-react";
 import {makeStyles} from "@material-ui/core/styles";
 
+
 const exampleStyles = makeStyles({
     resume: {
         padding: "32px",
