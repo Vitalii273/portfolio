@@ -22,19 +22,19 @@ export default function About({props}) {
     return (
         <div className={classes.resume}>
             <h1>Resume</h1>
-                <Heading
-                    name="Vitalii Adler"
-                    title="Software Engineer"
-                    // email="adler.vitalii@gmail.com"
-                    // phone="Phone - 0584830390"
-                    location={{
-                        address: " ",
-                        city: "Haifa",
-                        region: " ",
-                        postalCode: " ",
-                        countryCode: "Israel"
-                    }}
-                />
+            <Heading
+                name="Vitalii Adler"
+                title="Software Engineer"
+                // email="adler.vitalii@gmail.com"
+                // phone="Phone - 0584830390"
+                location={{
+                    address: " ",
+                    city: "Haifa",
+                    region: " ",
+                    postalCode: " ",
+                    countryCode: "Israel"
+                }}
+            />
             <Content title="SUMMARY">
                 <span>I am a software developer with 3 years of experience. Focused on the front-end development using cutting-edge technologies. Highly motivated team player with "out of the box" thinking! Worked in multinational and geographically distributed teams. </span>
             </Content>
@@ -169,7 +169,7 @@ export default function About({props}) {
                 />
             </Content>
             <Content title="LANGUAGES">
-                <span>English, Hebrew, Russian</span>
+                <span><strong>English, Hebrew, Russian</strong></span>
             </Content>
         </div>
 
