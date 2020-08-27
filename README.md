@@ -4,7 +4,7 @@ At the beginning we start another project for work with our Contact Form<br />
 [Download Server Project](https://github.com/Vitalii273/server_for_portfolio).
 Before that change for your self config.js <br />
 for use you can run project using command in the command line:
-### node index.js
+### `node index.js`
 
 
 ## Available Scripts
