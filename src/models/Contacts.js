@@ -4,7 +4,7 @@ import CustomizedSnackbars from "../components/snackBar";
 import {FeedBackForm} from "../components/feedBackForm.js"
 
 
-class FeedbackModel extends React.Component {
+class Contacts extends React.Component {
 
     constructor(props) {
         super(props);
@@ -93,4 +93,4 @@ class FeedbackModel extends React.Component {
     }
 }
 
-export default FeedbackModel;
+export default Contacts;

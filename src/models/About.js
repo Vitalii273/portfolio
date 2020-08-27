@@ -137,7 +137,7 @@ export default function About({props}) {
                     studyType="Graduated"
                     startDate="1994-09-01"
                     endDate="1999-06-01"
-                    gpa="4.0"
+                    gpa="2.7"
                     courses={[
                         " "
                     ]}
