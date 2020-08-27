@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+At the beginning we start another project for work with our Contact Form<br />
+[Download Server Project](https://github.com/Vitalii273/server_for_portfolio).
+Before that change for your self config.js <br />
+for use you can run project using command in the command line:
+### node index.js
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -66,3 +73,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
