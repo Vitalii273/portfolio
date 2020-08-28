@@ -19,7 +19,7 @@ class App extends React.Component {
             <BrowserRouter>
                 <Header/>
                 <Container>
-                    <Route exact path="/" component={About}/>
+                    <Route exact path="/home" component={About}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contacts" component={Contacts}/>
                     <Route path="/media" component={Certificates}/>

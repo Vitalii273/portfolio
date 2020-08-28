@@ -15,18 +15,21 @@ function Header(props) {
         <Navbar className={styles.bdNavbar} collapseOnSelect expand="lg" variant="dark">
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Navbar.Brand as={Link} to="/">
-                    <h3>About</h3>
+                <Navbar.Brand as={Link} to="/home" className={styles.navLink}>
+                   Home
                 </Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Nav.Link as={Link} to="/projects" active={pathname.startsWith('/projects')}>Projects</Nav.Link>
+                    <Nav.Link className={styles.navLink} as={Link} to="/home" active={pathname.startsWith('/home')}>
+                        About
+                    </Nav.Link>
+                    <Nav.Link className={styles.navLink}as={Link} to="/projects" active={pathname.startsWith('/projects')}>Projects</Nav.Link>
                     <Nav.Link as={Link} to="/media" active={pathname.startsWith('/media')}>Media</Nav.Link>
                     <Nav.Link as={Link} to="/contacts" active={pathname.startsWith('/contacts')}>Contacts</Nav.Link>
                 </Nav>
                 <Nav className="end" activeKey="/home">
-                    <Nav.Link as={Link} to="/faceBook" ctive={pathname.startsWith('/')}><ImFacebook2/></Nav.Link>
-                    <Nav.Link as={Link} to="/linkedIn" ctive={pathname.startsWith('/linkedIn')}><SiLinkedin/></Nav.Link>
-                    <Nav.Link as={Link} to="/git" ctive={pathname.startsWith('/git')}><AiFillGithub/></Nav.Link>
+                    <Nav.Link as={Link} to="/faceBook"><ImFacebook2/></Nav.Link>
+                    <Nav.Link as={Link} to="/linkedIn"><SiLinkedin/></Nav.Link>
+                    <Nav.Link as={Link} to="/git"><AiFillGithub/></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
