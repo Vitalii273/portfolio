@@ -1,14 +1,16 @@
 import React from 'react';
 import {CardColumns} from "react-bootstrap";
 import Certificate from "../components/certificate";
+import styles from '../css/models.module.css'
+import Footer from "../components/footer";
 
 
-export default function Certificates(props) {
+export default function Certificates() {
     return (
         // Render a Project component
         <>
             <br/>
-            <h1>Certificates</h1>
+            <h2 className={styles.h2}>Certificates</h2>
             <br/>
             <CardColumns>
                 <Certificate
@@ -27,6 +29,7 @@ export default function Certificates(props) {
                     text="LinkedIn Certificate, React+Redux"
                 />
             </CardColumns>
+            <Footer/>
         </>
     )
 }

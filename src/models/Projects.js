@@ -1,6 +1,8 @@
 import React from 'react';
 import {CardColumns} from "react-bootstrap";
 import Project from "../components/project";
+import styles from '../css/models.module.css'
+import Footer from "../components/footer";
 
 
 export default function Projects(props) {
@@ -8,7 +10,7 @@ export default function Projects(props) {
         // Render a Project component
         <>
             <br/>
-            <h1>Projects</h1>
+            <h2 className={styles.h2}>Projects</h2>
             <br/>
             <CardColumns>
                 <Project
@@ -29,6 +31,7 @@ export default function Projects(props) {
                     link="/gitJS"
                 />
             </CardColumns>
+            <Footer/>
         </>
     )
 }

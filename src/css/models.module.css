@@ -1,0 +1,9 @@
+.h2{
+    border-bottom: solid 1px #CFCFCF;
+    padding-bottom: 8px;
+}
+
+.bdNavbar {
+    min-height: 4rem;
+    background-color: #7952b3;
+}
